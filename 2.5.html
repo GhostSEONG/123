@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+# 리스트 만들기
+1. 화면에서 numbering이 처리되는 리스트를 확인할 수 있다.
+2. 3가지 종류의 리스트
+   1) 순서 있는 리스트(ordered list)
+   2) 순서 없는 리스트(unordered list)
+   3) 정의 리스트(definition list)
+     <dl></dl>
+3. 리스트 아이템
+   <li></li>
+</li> 는 생략도 가능
+# ol의 속성 유형
+1. ol의 type에는 여러가지 형태의 numbering을 하는 속성을 가지고 있다.
+   즉, 마커의 종류를 말한다.
+   1) type 속성별 numbering 처리
+      type="1" default 1,2,3
+      type="A" A,B,C
+      type="a" a,b,c
+      type="I" I,II,III
+      type="i" i,ii,iii
+   2) start라는 내용으로 시작 번호를 처리 숫자에 대해서만 적요
+      <ol type="I" start="3">
+        <li> ==> III 출력 @주의 start="III"아님
+      <ol type="a" start="3"
+        <li> ===> c 출력 start="c" 아님
+2. ul의 type은 모양으로 처리할 때, 사용된다
+   1)type"disc" 기본값 - 설정하지 않을 때, 나오는 모양
+   2) type="circle" 반원모양
+   3) type="square" 사각형모양
+   4) type="none" 표시하지 않을 때      
+
+-->
+<h3>라면 끓이는 순서(순서있는 리스트)</h3>
+<hr>
+<ol><!-- 기본적으로 type을 설정하지 않을 때, 1,2,3 형태로 처리 -->
+    <li>물을 끓인다</li>
+    <li>라면과 스프를 넣는다</li>
+    <li>파를 썰어 넣는다</li>
+    <li>5분 후 먹는다</li>
+</ol>
+<hr>
+<ol type="I" start="3">
+    <li>사과</li>
+    <li>바나나</li>
+    <li>딸기</li>
+
+</ol>
+<!--
+ex1) 기상 후, 등원과정을 ol li를 통해서 출력하세요.
+ex2) 좋아하는 음식 랭킹으로 출력하되, 2번째부터 출력하세요
+-->
+<ol>
+    <li>씻는다</li>
+    <li>옷 입는다</li>
+    <li>집에서 출발한다</li>
+    <li>차를 탄다</li>
+    <li>출발한다</li> 
+</ol>
+
+<ol type="a" start="2">
+    <li>고기</li>
+    <li>생선</li>
+    <li>야채</li>
+</ol>
+<!--
+ul : type이 모양으로 처리될 때, 사용
+-->
+<h3>패션 아이템목록</h3>
+<ul>
+
+    <li>티셔츠</li>
+    <li>청바지</li>
+    <li>운동화</li>
+</ul>
+<ul type="square">
+<li>셔츠</li>
+<li>스커트</li>
+<li>부츠</li>
+
+</ul>
+<!--
+ex) 취미활동 목록(ul) 활용
+다음 취미 활동을 아래와 같은 스타일 리스트로 작성하세요
+   독서, 음악감상, 영화 보기 - circle
+   사진찍기, 여행, 요리 - disc
+   운동, 자전거타기, 등산 - square
+-->
+</ul>
+<ul type="circle">
+<li>독서</li>
+<li>음악감상</li>
+<li>영화 보기</li>
+
+</ul>
+</ul>
+<ul type="disc">
+<li>사진찍기</li>
+<li>여행</li>
+<li>요리</li>
+
+</ul>
+</ul>
+<ul type="square">
+<li>운동</li>
+<li>자전거타기</li>
+<li>등산</li>
+
+</ul>
+</body>
+</html>
